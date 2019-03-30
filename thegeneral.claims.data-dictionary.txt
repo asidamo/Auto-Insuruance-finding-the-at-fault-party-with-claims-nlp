@@ -1,0 +1,76 @@
+
+ClaimID_RGEN: 
+    Description: Unique claim identifier
+    Type: int
+
+ExposureID_RGEN: 
+    Description: Unique exposure identifier 
+    Type: int
+
+ClaimLevelBody: 
+    Description: Claim-level notes, contains free-form notes about claim-level details where the content can be any thing the adjuster finds note worthy
+    Type: str
+
+ExposureLevelBody:
+    Description: Exposure-level notes, contains free-form notes about exposure-level details where the content can be any thing the adjuster finds note worthy
+    Type: str
+        
+AccidentDescription:
+    Description: A description of the accident in question
+    Type: str
+        
+InjuryDescription:
+    Description: a description of the injuries involved
+    Type: str
+        
+DamageDescription:
+    Description: a description of the vehicle damages involved
+    Type: str
+        
+SeverityTypeName:
+    Description: The severity of the claim. Can be any of the following:
+        ['Moderate', 'Minor', None,
+         'Major (hospitalization 3+ days or ICU)', 'Death',
+         'Life-threatening']
+    Type: str
+        
+ClaimGroup:
+    Description: The claims group the claim was assigned to. Can be any of the following:
+        ['Field Ops 1', 'Fast Track', 'Casualty Ops 1', 'Large Loss Unit',
+         'MedPIP', 'Inactive', 'CCU-Litigation', 'Non Claims',
+         'Central Operations', 'Casualty Ops 2', 'Field Ops 2', 'Specialty',
+         'Claims QA', 'Premium Fraud SIU', 'West Coast SIU', 'Central SIU',
+         'Total Loss', 'Vendor Mgmt']
+    Type: str
+        
+FaultRatingName:
+    Description: The decision about who was found to be at fault. Can be any of the following:
+        ['Other party at fault', 'Insured at fault', 'No fault',
+         'Comparative Negligence', 'Fault unknown', None]   
+    Type: str
+        
+LossCauseName: 
+    Description: The cause of the accident. Can be any of the following:
+        ['Collision with motor vehicle',
+       'Collision while merging / lane change', 'Rear-end collision',
+       'Collision in an intersection', 'Tow only',
+       'Collision while turning left', 'Collision with pedestrian',
+       'Collision while backing', 'Rollover',
+       'Collision with fixed object', 'Riot and civil commotion',
+       'IV struck by or struck animal', 'IV rear-end CV',
+       'Collision with bicycle / motorcycle', 'IV struck while parked',
+       'Glass breakage', 'Falling or moving object', 'Fire',
+       'Damage in loading / unloading', 'Collision with a parked car',
+       'IV theft', 'Water / Flood', 'Collision with train or bus',
+       'Malicious mischief and vandalism', 'CV rear-end IV',
+       'Hit and Run', 'Hazardous Condition', 'Tornado',
+       'Unlawfully Parked', 'IV Repossessed', 'Hail']
+    Type: str
+        
+CCCreateTime:
+    Description: The datetime the claim was created/reported.
+    Type: datetime
+
+CloseDate:
+    Description: The datetime the claim was closed/resolved.
+    Type: datetime
